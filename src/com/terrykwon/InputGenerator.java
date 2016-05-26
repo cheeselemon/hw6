@@ -22,7 +22,7 @@ public class InputGenerator {
     }
 
 
-    static void knuthRandomShuffle(int[] inputs) {
+    static void knuthShuffle(int[] inputs) {
         int N = inputs.length;
 
         for (int j = 0; j < N; j++) {

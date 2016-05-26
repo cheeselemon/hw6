@@ -7,7 +7,7 @@ public class Main {
         int[] inputs = InputGenerator.generateUniqueNumbers(10);
         InputGenerator.print(inputs);
 
-        InputGenerator.knuthRandomShuffle(inputs);
+        InputGenerator.knuthShuffle(inputs);
         InputGenerator.print(inputs);
 
     }

@@ -3,8 +3,17 @@ package com.terrykwon;
 /**
  * Created by Terry Kwon on 5/26/2016.
  */
-public interface Sorter {
+public class Sorter {
 
-    void sort(int[] inputs);
+    /**
+     * Prevent instantiation.
+     */
+    private Sorter() {
+
+    }
+
+    static void insertionSort(int[] inputs) {
+
+    }
 
 }
