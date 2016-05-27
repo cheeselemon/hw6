@@ -15,7 +15,7 @@ public class InputGenerator {
      * Input type 1
      * Generate incremental integers from 0 to (size - 1).
      */
-    static int[] generateUniqueNumbers(int size) {
+    static int[] generateAscendingNumbers(int size) {
         int arr[] = new int[size];
 
         for (int i = 0; i < size; i ++) {
@@ -28,6 +28,7 @@ public class InputGenerator {
     /**
      * Input type 2
      * Lots of duplicates.
+     * 1/3 of size filled with 1, 1/3 filled with 2, 1/3 filled with incremental integers.
      */
     static int[] generateNumsWithDuplicates(int size) {
         int arr[] = new int[size];
@@ -47,6 +48,18 @@ public class InputGenerator {
             i++;
         }
 
+        return arr;
+    }
+
+    /**
+     * Input type 4.
+     * Reversely sorted integers.
+     */
+    static int[] generateDescendingNumbers(int size) {
+        int arr[] = new int[size];
+        for (int i = 0; i < size; i++) {
+            arr[i] = size - i - 1;
+        }
         return arr;
     }
 
