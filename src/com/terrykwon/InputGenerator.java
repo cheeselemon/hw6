@@ -15,11 +15,11 @@ public class InputGenerator {
      * Input type 1
      * Generate incremental integers from 0 to (size - 1).
      */
-    static int[] generateAscendingNumbers(int size) {
+    static int[] generateAscendingNums(int size) {
         int arr[] = new int[size];
 
         for (int i = 0; i < size; i ++) {
-            arr[i] = i;
+            arr[i] = i + 1;
         }
 
         return arr;
@@ -44,7 +44,7 @@ public class InputGenerator {
             i++;
         }
         while (i < size) {
-            arr[i] = i;
+            arr[i] = i + 1;
             i++;
         }
 
@@ -55,11 +55,31 @@ public class InputGenerator {
      * Input type 4.
      * Reversely sorted integers.
      */
-    static int[] generateDescendingNumbers(int size) {
+    static int[] generateDescendingNums(int size) {
         int arr[] = new int[size];
         for (int i = 0; i < size; i++) {
-            arr[i] = size - i - 1;
+            arr[i] = size - i;
         }
+        return arr;
+    }
+
+    /**
+     * Input type 5.
+     * "Pipe organ".
+     */
+    static int[] generatePipeOrganNums(int size) {
+        int arr[] = new int[size];
+        int i = 0;
+
+        while (i < size / 2) {
+            arr[i] = i + 1;
+            i++;
+        }
+        while (i < size) {
+            arr[i] = size - i;
+            i++;
+        }
+
         return arr;
     }
 
