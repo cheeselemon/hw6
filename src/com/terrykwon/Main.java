@@ -10,7 +10,7 @@ public class Main {
         InputGenerator.knuthShuffle(inputs);
         print(inputs);
 
-        Sorter.insertionSort(inputs);
+        Sorter.shellSortKnuth(inputs);
         print(inputs);
     }
 

@@ -12,6 +12,9 @@ public class Sorter {
 
     }
 
+    /**
+     * 3
+     */
     static void insertionSort(int[] inputs) {
         int i, j, key;
 
@@ -26,5 +29,31 @@ public class Sorter {
         }
 
     }
+
+
+    /**
+     * 6
+     */
+    static void shellSortKnuth(int[] inputs) {
+        int N = inputs.length;
+        int interval = 1;
+
+        while (interval < N / 3) {
+            interval = interval * 3 + 1;
+        }
+
+        while (interval >= 1) {
+            for (int i = interval; i < N; i++) {
+                for (int j = i; j >= interval && inputs[j] < inputs[j - interval]; j -= interval) {
+                    int swap = inputs[j];
+                    inputs[j] = inputs[j - interval];
+                    inputs[j - interval] = swap;
+                }
+            }
+            interval /= 3;
+        }
+    }
+
+
 
 }
