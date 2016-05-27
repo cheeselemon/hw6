@@ -11,6 +11,10 @@ public class InputGenerator {
     private InputGenerator() {
     }
 
+    /**
+     * Input type 1
+     * Generate incremental integers from 0 to (size - 1).
+     */
     static int[] generateUniqueNumbers(int size) {
         int arr[] = new int[size];
 
@@ -21,7 +25,35 @@ public class InputGenerator {
         return arr;
     }
 
+    /**
+     * Input type 2
+     * Lots of duplicates.
+     */
+    static int[] generateNumsWithDuplicates(int size) {
+        int arr[] = new int[size];
 
+        int i = 0;
+
+        while (i < size / 3) {
+            arr[i] = 1;
+            i++;
+        }
+        while (i < size * 2 / 3) {
+            arr[i] = 2;
+            i++;
+        }
+        while (i < size) {
+            arr[i] = i;
+            i++;
+        }
+
+        return arr;
+    }
+
+
+    /**
+     * Knuth Shuffle given array of integers.
+     */
     static void knuthShuffle(int[] inputs) {
         int N = inputs.length;
 
