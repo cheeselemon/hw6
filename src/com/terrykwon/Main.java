@@ -18,7 +18,7 @@ public class Main {
 
         System.out.println();
 
-        TunedQuickSort.sort(inputs5);
+        TunedRecursiveMergeSort.sort(inputs5);
         print(inputs5);
 }
 

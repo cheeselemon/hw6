@@ -1,7 +1,7 @@
 package com.terrykwon;
 
 /**
- * Created by Terry Kwon on 5/28/2016.
+ * Todo: Ninther, CUT_SIZE.
  */
 public class TunedQuickSort {
 
