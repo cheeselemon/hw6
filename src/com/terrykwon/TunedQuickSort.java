@@ -33,7 +33,7 @@ public class TunedQuickSort {
      * @param k Index of arr.
      * @return Index of median value.
      */
-    public static int findMedian(int[] arr, int i, int j, int k) {
+    private static int findMedian(int[] arr, int i, int j, int k) {
         if (arr[i] <= arr[j]) {
             if (arr[j] <= arr[k]) {
                 return j;
